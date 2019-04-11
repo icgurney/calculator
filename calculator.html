@@ -9,17 +9,35 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
-        div {
-            border: 1px black solid;
+        .display {
+            /* border: black solid 1px; */
+            text-align: right;
+        }
+
+        .topDisplay {
+            font-size: 50px;
+            border-bottom: none;
+            margin-top: 2%
+        }
+
+        .bottomDisplay {
+            border-top: none;
+            margin-bottom: 2%;
+            font-size: 120px;
+        }
+
+        body {
+            background-color: rgb(216, 216, 216);
         }
 
         button {
-            margin-left: 15%;
+            margin: 3px;
         }
     </style>
 </head>
 
 <body>
+
     <div class="container">
         <div class="row">
             <div class="stringWindow col-sm-12"><br></div>
@@ -28,7 +46,7 @@
         <div class="resWindow col-sm-12"><br></div>
     </div>
 
-    <div <div class="row">
+    <div class="row">
         <div class="col-sm-3">
             <button type="button" class="btn btn-primary btn-lg" value="clearEntry">CE</button>
         </div>
@@ -92,8 +110,6 @@
         <div class="col-sm-6">
             <button type="button" class="btn btn-primary btn-lg" value="equals">=</button>
         </div>
-    </div>
-
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
