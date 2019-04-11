@@ -20,7 +20,19 @@ function getNum(){
 }
 
 function getOp(){
-
+    switch(val){
+        case add:
+            resString = resString + " + ";
+            break;
+        case sub:
+            resString = resString + " - ";
+            break;
+        case mul:
+            resString = resString + " x ";
+            break;
+        case div:
+            resString = resString + " "
+    }
 }
 
 function addRes(){
