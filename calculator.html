@@ -13,23 +13,19 @@
             /* border: black solid 1px; */
             text-align: right;
         }
-
         .topDisplay {
             font-size: 50px;
             border-bottom: none;
             margin-top: 2%
         }
-
         .bottomDisplay {
             border-top: none;
             margin-bottom: 2%;
             font-size: 120px;
         }
-
         body {
             background-color: rgb(216, 216, 216);
         }
-
         button {
             margin: 3px;
         }
@@ -41,81 +37,82 @@
     <div class="container">
         <div class="row">
             <!-- <div class="col-1"></div> -->
-            <div class="col-12 display topDisplay">0</div>
+            <div class="stringWindow col-12 display topDisplay"></div>
         </div>
         <div class="row">
             <!-- <div class="col-6"></div> -->
-            <div class="col-12 display bottomDisplay">0</div>
+            <div class="resWindow col-12 display bottomDisplay"></div>
         </div>
     </div>
 
     <div class="container">
-        <div <div class="row">
+        <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">CE</button>
+                <button type="button" class="btn btn-primary btn-block" value="clearEntry">CE</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">C</button>
+                <button type="button" class="btn btn-primary btn-block" value="clear">C</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">Pow</button>
+                <button type="button" class="btn btn-primary btn-block" value="pow">Pow</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">Div</button>
+                <button type="button" class="divButton btn btn-primary btn-block" value="divide">Div</button>
             </div>
         </div>
 
         <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">7</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="7">7</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">8</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="8">8</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">9</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="9">9</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">X</button>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">4</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">5</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">6</button>
-            </div>
-            <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">-</button>
+                <button type="button" class="mulButton btn btn-primary btn-block" value="mult">X</button>
             </div>
         </div>
         <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">1</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="4">4</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">2</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="5">5</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">3</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="6">6</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block">+</button>
+                <button type="button" class="subButton btn btn-primary btn-block" value="sub">-</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="1">1</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="2">2</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="3">3</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="addButton btn btn-primary btn-block" value="add">+</button>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <button type="button" class="btn btn-primary btn-block">0</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="0">0</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-primary btn-block">=</button>
+                <button type="button" class="btn btn-primary btn-block" value="">=</button>
             </div>
         </div>
     </div>
+    <script src="calculatorAG.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
