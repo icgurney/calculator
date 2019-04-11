@@ -19,7 +19,7 @@ function getNum(){
 
 }
 
-function getOp(){
+function getOp(val){
     switch(val){
         case "add":
             resString = resString + " + ";
@@ -59,9 +59,12 @@ function divRes(){
     getOp("div");
 }
 
-document.querySelectorAll('.numButtons').addEventListener('click',function(){
-    curNum = this.data-value;
-    stringWindow.append(curNum);
+document.querySelectorAll('.numButtons').forEach(function (val){ 
+    val.addEventListener('click',function(){
+    curNum = this.dataValue;
+    console.log(this.dataValue);
+    getNum();
+    stringWindow.innerHtml = curNum;
     document.querySelector(".addButton").addEventListener('click', function(curNum){
         addRes();
         resWindow.innerHtml = resNum;
@@ -78,4 +81,5 @@ document.querySelectorAll('.numButtons').addEventListener('click',function(){
         divRes();
         resWindow.innerHtml = resNum;
     })
+})
 })
