@@ -21,34 +21,42 @@ function getNum(){
 
 function getOp(){
     switch(val){
-        case add:
+        case "add":
             resString = resString + " + ";
             break;
-        case sub:
+        case "sub":
             resString = resString + " - ";
             break;
-        case mul:
+        case "mul":
             resString = resString + " x ";
             break;
-        case div:
-            resString = resString + " "
+        case "div":
+            resString = resString + " ÷ "
+            break;
+        default:
+            console.log("uh oh")
+            break;
     }
 }
 
 function addRes(){
     resNum = curNum + resNum;
+    getOp("add");
 }
 
 function subRes(){
     resNum = resNum - curNum;
+    getOp("sub");
 }
 
 function mulRes(){
     resNum = resNum * curNum;
+    getOp("mul");
 }
 
 function divRes(){
     resNum = resNum / curNum;
+    getOp("div");
 }
 
 document.querySelectorAll('.numButtons').addEventListener('click',function(){
