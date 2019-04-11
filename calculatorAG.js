@@ -40,22 +40,22 @@ function getOp(val){
 }
 
 function addRes(){
-    resNum = curNum + resNum;
+    resNum = parseInt(curNum) + parseInt(resNum);
     getOp("add");
 }
 
 function subRes(){
-    resNum = resNum - curNum;
+    resNum = parseInt(resNum) - curNum;
     getOp("sub");
 }
 
 function mulRes(){
-    resNum = resNum * curNum;
+    resNum = parseInt(resNum) * curNum;
     getOp("mul");
 }
 
 function divRes(){
-    resNum = resNum / curNum;
+    resNum = parseInt(resNum) / curNum;
     getOp("div");
 }
 
@@ -65,21 +65,23 @@ document.querySelectorAll('.numButtons').forEach(function (val){
     console.log(this.value);
     getNum();
     stringWindow.innerHTML = curNum;
-    document.querySelector(".addButton").addEventListener('click', function(curNum){
-        addRes();
-        resWindow.innerHTML = resNum;
-    })
-    document.querySelector('.subButton').addEventListener('click', function(){
-        subRes();
-        resWindow.innerHTML = resNum;
-    })
-    document.querySelector('.mulButton').addEventListener('click', function(){
-        mulRes();
-        resWindow.innerHTML = resNum;
-    })
-    document.querySelector('.divButton').addEventListener('click', function(){
-        divRes();
-        resWindow.innerHTML = resNum;
+    
     })
 })
+
+document.querySelector(".addButton").addEventListener('click', function(curNum){
+    addRes();
+    resWindow.innerHTML = resNum;
+})
+document.querySelector('.subButton').addEventListener('click', function(){
+    subRes();
+    resWindow.innerHTML = resNum;
+})
+document.querySelector('.mulButton').addEventListener('click', function(){
+    mulRes();
+    resWindow.innerHTML = resNum;
+})
+document.querySelector('.divButton').addEventListener('click', function(){
+    divRes();
+    resWindow.innerHTML = resNum;
 })

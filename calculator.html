@@ -13,23 +13,19 @@
             /* border: black solid 1px; */
             text-align: right;
         }
-
         .topDisplay {
             font-size: 50px;
             border-bottom: none;
             margin-top: 2%
         }
-
         .bottomDisplay {
             border-top: none;
             margin-bottom: 2%;
             font-size: 120px;
         }
-
         body {
             background-color: rgb(216, 216, 216);
         }
-
         button {
             margin: 3px;
         }
@@ -40,77 +36,83 @@
 
     <div class="container">
         <div class="row">
-            <div class="stringWindow col-sm-12"><br></div>
+            <!-- <div class="col-1"></div> -->
+            <div class="stringWindow col-12 display topDisplay"></div>
         </div>
-        <div class="row"></div>
-        <div class="resWindow col-sm-12"><br></div>
-    </div>
-
-    <div class="row">
-        <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-lg" value="clearEntry">CE</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-lg" value="clear">C</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="btn btn-primary btn-lg" value="pow">Pow</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="divButton btn btn-primary btn-lg" value="divide">Div</button>
+        <div class="row">
+            <!-- <div class="col-6"></div> -->
+            <div class="resWindow col-12 display bottomDisplay"></div>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="7">7</button>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" value="clearEntry">CE</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" value="clear">C</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="btn btn-primary btn-block" value="pow">Pow</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="divButton btn btn-primary btn-block" value="divide">Div</button>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="8">8</button>
+
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="7">7</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="8">8</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="9">9</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="mulButton btn btn-primary btn-block" value="mult">X</button>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="9">9</button>
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="4">4</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="5">5</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="6">6</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="subButton btn btn-primary btn-block" value="sub">-</button>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <button type="button" class="mulButton numButtons btn btn-primary btn-lg" value="mult">X</button>
+        <div class="row">
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="1">1</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="2">2</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="3">3</button>
+            </div>
+            <div class="col-3">
+                <button type="button" class="addButton btn btn-primary btn-block" value="add">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <button type="button" class="numButtons btn btn-primary btn-block" value="0">0</button>
+            </div>
+            <div class="col-6">
+                <button type="button" class="btn btn-primary btn-block" value="">=</button>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="4">4</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="5">5</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="6">6</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="subButton btn btn-primary btn-lg" value="sub">-</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="1">1</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="2">2</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="3">3</button>
-        </div>
-        <div class="col-sm-3">
-            <button type="button" class="addButton btn btn-primary btn-lg" value="add">+</button>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-6">
-            <button type="button" class="numButtons btn btn-primary btn-lg" value="0">0</button>
-        </div>
-        <div class="col-sm-6">
-            <button type="button" class="btn btn-primary btn-lg" value="equals">=</button>
-        </div>
-    </div>
+    <script src="calculatorAG.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -122,7 +124,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-        <script src="calculatorAG.js"></script>
 </body>
 
 </html>
