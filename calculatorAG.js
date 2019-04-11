@@ -14,7 +14,7 @@ function clearEntry(){
 }
 
 function getNum(){
-    resWindow.innerHtml = curNum;
+    resWindow.innerHTML = curNum;
     resString = resString + curNum;
 
 }
@@ -61,25 +61,25 @@ function divRes(){
 
 document.querySelectorAll('.numButtons').forEach(function (val){ 
     val.addEventListener('click',function(){
-    curNum = this.dataValue;
-    console.log(this.dataValue);
+    curNum = this.value;
+    console.log(this.value);
     getNum();
-    stringWindow.innerHtml = curNum;
+    stringWindow.innerHTML = curNum;
     document.querySelector(".addButton").addEventListener('click', function(curNum){
         addRes();
-        resWindow.innerHtml = resNum;
+        resWindow.innerHTML = resNum;
     })
     document.querySelector('.subButton').addEventListener('click', function(){
         subRes();
-        resWindow.innerHtml = resNum;
+        resWindow.innerHTML = resNum;
     })
     document.querySelector('.mulButton').addEventListener('click', function(){
         mulRes();
-        resWindow.innerHtml = resNum;
+        resWindow.innerHTML = resNum;
     })
     document.querySelector('.divButton').addEventListener('click', function(){
         divRes();
-        resWindow.innerHtml = resNum;
+        resWindow.innerHTML = resNum;
     })
 })
 })
