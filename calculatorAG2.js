@@ -1,8 +1,14 @@
+var opFlag = false;
+
+
 document.querySelectorAll('.numButtons').forEach(function(val){
     val.addEventListener('click',function(){
         curNum = this.value;
         insert(curNum);
         console.log('clicked!')
+        if(opFlag == false){
+          opFlag= !opFlag;
+        }
     })
 })
 document.querySelector('.equalButton').addEventListener('click', function(){
@@ -13,6 +19,17 @@ document.querySelector('.clearButton').addEventListener('click', function(){
 })
 document.querySelector('.clearEntry').addEventListener('click', function(){
   clearEntry();
+})
+
+document.querySelectorAll('.opButtons').forEach(function(val){
+  val.addEventListener('click',function(){
+      if (opFlag == true){
+        curNum = this.value;
+        insert(curNum);
+        console.log('clicked!')
+        opFlag= !opFlag;
+      }
+  })
 })
 function insert(val){
     document.querySelector('.resWindow').value = document.querySelector('.resWindow').value+val;
