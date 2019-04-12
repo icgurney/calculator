@@ -29,35 +29,42 @@
         button {
             margin: 3px;
         }
+        .resWindow {
+            width: 70vw;
+        }
     </style>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="row">
+        <form>
+        <input class="resWindow" type="text" value="">
+        </form>
+
+        <!--<div class="row"> -->
             <!-- <div class="col-1"></div> -->
-            <div class="stringWindow col-12 display topDisplay"></div>
-        </div>
-        <div class="row">
+            <!-- <div class="stringWindow col-12 display topDisplay"></div> -->
+        <!-- </div>
+        <div class="row"> -->
             <!-- <div class="col-6"></div> -->
-            <div class="resWindow col-12 display bottomDisplay"></div>
-        </div>
+            <!-- <div class="resWindow col-12 display bottomDisplay"></div> -->
+        <!-- </div> -->
     </div>
 
     <div class="container">
         <div class="row">
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block" value="clearEntry">CE</button>
+                <button type="button" class="clearEntry btn btn-primary btn-block" value="clearEntry">CE</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block" value="clear">C</button>
+                <button type="button" class="clearButton btn btn-primary btn-block" value="clear">C</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-primary btn-block" value="pow">Pow</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="^">Pow</button>
             </div>
             <div class="col-3">
-                <button type="button" class="divButton btn btn-primary btn-block" value="divide">Div</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="/">Div</button>
             </div>
         </div>
 
@@ -72,7 +79,7 @@
                 <button type="button" class="numButtons btn btn-primary btn-block" value="9">9</button>
             </div>
             <div class="col-3">
-                <button type="button" class="mulButton btn btn-primary btn-block" value="mult">X</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="*">X</button>
             </div>
         </div>
         <div class="row">
@@ -86,7 +93,7 @@
                 <button type="button" class="numButtons btn btn-primary btn-block" value="6">6</button>
             </div>
             <div class="col-3">
-                <button type="button" class="subButton btn btn-primary btn-block" value="sub">-</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="-">-</button>
             </div>
         </div>
         <div class="row">
@@ -100,7 +107,7 @@
                 <button type="button" class="numButtons btn btn-primary btn-block" value="3">3</button>
             </div>
             <div class="col-3">
-                <button type="button" class="addButton btn btn-primary btn-block" value="add">+</button>
+                <button type="button" class="numButtons btn btn-primary btn-block" value="+">+</button>
             </div>
         </div>
         <div class="row">
@@ -108,11 +115,11 @@
                 <button type="button" class="numButtons btn btn-primary btn-block" value="0">0</button>
             </div>
             <div class="col-6">
-                <button type="button" class="btn btn-primary btn-block" value="">=</button>
+                <button type="button" class="equalButton btn btn-primary btn-block" value="=">=</button>
             </div>
         </div>
     </div>
-    <script src="calculatorAG.js"></script>
+    <script src="calculatorAG2.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
